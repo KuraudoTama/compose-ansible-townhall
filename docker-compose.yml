@@ -1,0 +1,11 @@
+mongodb:
+  image: tutum/mongodb
+  expose:
+    - 27017
+
+townhall:
+  build: ./townhall
+  ports:
+    - "5000:5000"
+  links:
+    - mongodb
