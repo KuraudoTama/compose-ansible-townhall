@@ -1,7 +1,7 @@
 FROM ansible/ubuntu14.04-ansible
 ADD . /townhall
 WORKDIR /townhall
-RUN git clone https://github.com/KuraudoTama/ansible-townhall.git -b deploy
+RUN git clone https://github.com/KuraudoTama/ansible-townhall.git
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN bash townhall.sh
 WORKDIR ansible-townhall

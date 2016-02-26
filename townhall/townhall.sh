@@ -3,8 +3,6 @@
 # PYTHONPATH
 echo "PYTHONPATH=$PYTHONPATH:/townhall/ansible-townhall" >> ~/.bashrc
 
-# change db host
-
 # ansible.cfg
 mkdir -p /usr/share/ansible/plugins/callback
 cp -f /opt/ansible/ansible/examples/ansible.cfg /etc/ansible/ansible.cfg
