@@ -1,5 +1,5 @@
 mongodb:
-  image: tutum/mongodb
+  image: mongo
   expose:
     - 27017
 
