@@ -5,6 +5,8 @@ mongodb:
 
 townhall:
   build: ./townhall
+  environment:
+    MONGO_URL: mongodb://mongodb:27017
   ports:
     - "8080:8080"
   links:
